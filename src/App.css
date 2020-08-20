@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html, body, #root, .App, .title, .form-main { height: 100%; }
@@ -14,34 +14,30 @@ html, body, #root, .App, .title, .form-main { height: 100%; }
 .title{
     width: 50%;
     float: left;
-    background-color: #ffffff;
+    display: block;
 }
 
-h1{
-    color: #0674dc !important;
-    font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    width:50%;
-    text-align: center;
-    margin-left: 40px;
-    font-size:4.5em;
+img{
+    width:100%;
+    height: auto;
 }
 
 .form-main{
     width: 50%;
-    background-color: #bdc4ce;
+    background-color:black;
     padding: 25px 40px;
     overflow: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h3{
-    color: black;
+h1{
+    color: whitesmoke;
     font-weight: 300;
-    margin-bottom: 50px;
     text-decoration: none;
     display: inline;
-    font-size: 1.7em;
+    font-size: 2em;
     margin: 15px 10px;
+    margin-left: 25px;
     padding-bottom: 5px;
 }
 
@@ -58,10 +54,11 @@ h3{
 }
 
 .form-label {
-    display: block;
+    display: none;
     text-transform: uppercase;
     font-size: .9em;
-    color: black;
+    padding-left:15px;
+    color: whitesmoke;
 }
 
 .form-control{
@@ -75,28 +72,53 @@ h3{
     padding-left:15px;
     padding-bottom: 10px;
     margin-top: 10px;
+    color: whitesmoke;
 }
+
+::placeholder {
+    color:whitesmoke;
+    opacity: 1;
+  }
 
 .button {
-    display: block;
-    background-color: #0674dc !important;
-    color: #fff;
     border: none;
-    outline: none;
-    border-radius: 20px;
-    padding: 10px 28px;
-    font-size: .9em;
-    font-weight: 500;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 25px;
+    border-radius: 9px;
     cursor: pointer;
-    width: 100%;
-
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid #e7e7e7;
 }
 .forgot-password a {
-    color: #0674dc !important;
+    margin-left: 25px;
+    color: whitesmoke;
+}
+
+#img2{
+    display: none;
 }
 
 @media screen and (max-width:800px) {
-    .title, .form-main {
+    #img1{
+        display: none;
+    }
+    #img2{
+        display: block;
+    }
+    .title{
+        height: auto;
+        width:100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .form-main  {
         height: auto;
         width:100%;
     }

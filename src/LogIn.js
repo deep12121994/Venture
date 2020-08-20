@@ -50,7 +50,7 @@ export default class LogIn extends Component {
         return(
 
            <form className="form-main">
-                <h3>Logn In</h3>
+                <h1>Log In</h1>
                 <div className="form-ip">
                     <div className="form-group">
                         <label className="form-label">User name</label>
