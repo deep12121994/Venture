@@ -54,17 +54,17 @@ export default class LogIn extends Component {
                 <div className="form-ip">
                     <div className="form-group">
                         <label className="form-label">User name</label>
-                        <input type="email" className="form-control" placeholder="Enter name" />
+                        <input type="text" className="form-control" placeholder="Enter name" onChange={event=> this.setState({username: event.target.value})} />
                     </div>
 
                     <div className="form-group">
                         <label className="form-label">Password</label>
-                        <input type="password" className="form-control" placeholder="Enter password" /> 
+                        <input type="password" className="form-control" placeholder="Enter password" onChange={event=> this.setState({username: event.target.value})} /> 
                     </div>
                  
-                    <button type="submit" className="button">Log In</button>
+                    <button type="submit" className="button" onClick={()=>this.logIn}>Log In</button>
                     <p className="forgot-password text-right">
-                        <a href="#">Forgot password?</a>
+                        <a href="#something">Forgot password?</a>
                     </p>
                 </div>
 
